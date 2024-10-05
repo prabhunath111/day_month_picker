@@ -1,6 +1,6 @@
 name: day_month_picker
 description: "This can help you with selecting Month and day of the month"
-version: 0.0.2
+version: 0.0.3
 homepage: https://github.com/prabhunath111/day_month_picker
 
 environment:

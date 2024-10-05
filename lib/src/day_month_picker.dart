@@ -90,105 +90,105 @@ class _DayMonthPickerState extends State<DayMonthPicker> {
         showDialog(context: context, builder: (_){
           return StatefulBuilder(builder: (_, dialogState){
             return AlertDialog(
-              surfaceTintColor: widget.surfaceTintColor?? Colors.transparent,
-              title: SizedBox(
-                width: 300,
-                child: Column(
-                  mainAxisSize: MainAxisSize.min,
-                  mainAxisAlignment: MainAxisAlignment.start,
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(widget.title,
-                        style: widget.titleTextStyle),
-                    const SizedBox(height: 16.0),
-                    Wrap(
-                      spacing: 8.0,
-                      runSpacing: 8.0,
-                      children: List.generate(12, (index) => InkWell(
-                        onTap: () {
-                          if(index == 1 && dayIndex != null && dayIndex! > 28) {
-                            dialogState((){
-                              monthIndex = index;
-                              dayIndex = null;
-                            });
-                          } else {
-                            dialogState(()=> monthIndex = index);
-                          }
-                        },
-                        child: Container(
-                            width: 60,
-                            padding: const EdgeInsets.symmetric(vertical:4.0, horizontal: 8),
-                            decoration: BoxDecoration(
-                                color: monthIndex == index?widget.selectedMonthBgColor:widget.unSelectedMonthBgColor,
-                                borderRadius: BorderRadius.circular(32),
-                                border: Border.all(width: 0.5, color: const Color(0xff808191))
-                            ),
-                            child: Center(
-                              child: Text(monthDays.keys.elementAt(index),
-                                  style: monthIndex == index? widget.selectedMonthTextStyle:
-                                  widget.unSelectedMonthTextStyle),
-                            )),
-                      )),
-                    ),
-                    const Padding(
-                      padding: EdgeInsets.symmetric(vertical: 8.0),
-                      child: Divider(height: 0.1, color: Colors.grey),
-                    ),
-                    Wrap(
-                      spacing: 8.0,
-                      runSpacing: 8.0,
-                      children: List.generate(monthDays.entries.elementAt(monthIndex).value.length, (index) => InkWell(
-                        splashColor: Colors.transparent,
-                        onTap: ()=> dialogState(()=> dayIndex = index),
-                        child: Container(
-                            padding: const EdgeInsets.symmetric(vertical:4.0, horizontal: 8),
-                            decoration: BoxDecoration(
-                              color: dayIndex == index?widget.selectedDayBgColor:widget.unSelectedDayBgColor,
-                              shape: BoxShape.circle,
-                            ),
-                            child: Text(monthDays['Jan']![index].toString(),
-                                style: dayIndex==index?widget.selectedDayTextStyle:widget.unSelectedDayTextStyle)),
-                      )),
-                    ),
-                    const SizedBox(height: 12.0),
-                    Align(
-                      alignment: Alignment.bottomRight,
-                      child: Row(
-                        mainAxisSize: MainAxisSize.min,
-                        mainAxisAlignment: MainAxisAlignment.end,
-                        children: [
-                          InkWell(
-                            splashColor: Colors.transparent,
-                              onTap: ()=> Navigator.of(context).pop(),
-                              child: Padding(
-                                padding: const EdgeInsets.all(12.0),
-                                child: Text("Cancel", style: widget.cancelTextStyle),
+                surfaceTintColor: widget.surfaceTintColor?? Colors.transparent,
+                title: SizedBox(
+                  width: MediaQuery.of(context).size.height<400?null:300,//(MediaQuery.sizeOf(context).)?:MediaQuery.of(context).orientation == Orientation.portrait ?300:null,
+                  child: Column(
+                    mainAxisSize: MainAxisSize.min,
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(widget.title,
+                          style: widget.titleTextStyle),
+                      const SizedBox(height: 16.0),
+                      Wrap(
+                        spacing: 8.0,
+                        runSpacing: 8.0,
+                        children: List.generate(12, (index) => InkWell(
+                          onTap: () {
+                            if(index == 1 && dayIndex != null && dayIndex! > 28) {
+                              dialogState((){
+                                monthIndex = index;
+                                dayIndex = null;
+                              });
+                            } else {
+                              dialogState(()=> monthIndex = index);
+                            }
+                          },
+                          child: Container(
+                              width: 60,
+                              padding: const EdgeInsets.symmetric(vertical:4.0, horizontal: 8),
+                              decoration: BoxDecoration(
+                                  color: monthIndex == index?widget.selectedMonthBgColor:widget.unSelectedMonthBgColor,
+                                  borderRadius: BorderRadius.circular(32),
+                                  border: Border.all(width: 0.5, color: const Color(0xff808191))
+                              ),
+                              child: Center(
+                                child: Text(monthDays.keys.elementAt(index),
+                                    style: monthIndex == index? widget.selectedMonthTextStyle:
+                                    widget.unSelectedMonthTextStyle),
                               )),
-                          InkWell(
-                              splashColor: Colors.transparent,
-                              onTap: () {
-                                DayMonth dayMonthData = DayMonth();
-                                if(dayIndex != null) {
-                                  dayMonthData.day = (dayIndex! + 1).toString().padLeft(2,"0");
-                                  dayMonthData.month = (monthIndex + 1).toString().padLeft(2,"0");
-                                }
-                                if(dayMonthData.day != null) {
-                                  Navigator.of(context).pop(dayMonthData);
-                                } else {
-                                  Navigator.of(context).pop();
-                                }
-                              },
-                              child: Padding(
-                                padding: const EdgeInsets.all(12.0),
-                                child: Text("Ok", style: widget.okTextStyle,),
-                              )),
-                        ],
+                        )),
                       ),
-                    ),
-                  ],
-                ),
-              ),
-              // content: Text("Hello"),
+                      const Padding(
+                        padding: EdgeInsets.symmetric(vertical: 8.0),
+                        child: Divider(height: 0.1, color: Colors.grey),
+                      ),
+                      Wrap(
+                        spacing: 8.0,
+                        runSpacing: 8.0,
+                        children: List.generate(monthDays.entries.elementAt(monthIndex).value.length, (index) => InkWell(
+                          splashColor: Colors.transparent,
+                          onTap: ()=> dialogState(()=> dayIndex = index),
+                          child: Container(
+                              padding: const EdgeInsets.symmetric(vertical:4.0, horizontal: 8),
+                              decoration: BoxDecoration(
+                                color: dayIndex == index?widget.selectedDayBgColor:widget.unSelectedDayBgColor,
+                                shape: BoxShape.circle,
+                              ),
+                              child: Text(
+                                  monthDays.entries.elementAt(monthIndex).value[index].toString(),
+                                  style: dayIndex==index?widget.selectedDayTextStyle:widget.unSelectedDayTextStyle)),
+                        )),
+                      ),
+                      const SizedBox(height: 12.0),
+                      Align(
+                        alignment: Alignment.bottomRight,
+                        child: Row(
+                          mainAxisSize: MainAxisSize.min,
+                          mainAxisAlignment: MainAxisAlignment.end,
+                          children: [
+                            InkWell(
+                                splashColor: Colors.transparent,
+                                onTap: ()=> Navigator.of(context).pop(),
+                                child: Padding(
+                                  padding: const EdgeInsets.all(12.0),
+                                  child: Text("Cancel", style: widget.cancelTextStyle),
+                                )),
+                            InkWell(
+                                splashColor: Colors.transparent,
+                                onTap: () {
+                                  DayMonth dayMonthData = DayMonth();
+                                  if(dayIndex != null) {
+                                    dayMonthData.day = (dayIndex! + 1).toString().padLeft(2,"0");
+                                    dayMonthData.month = (monthIndex + 1).toString().padLeft(2,"0");
+                                  }
+                                  if(dayMonthData.day != null) {
+                                    Navigator.of(context).pop(dayMonthData);
+                                  } else {
+                                    Navigator.of(context).pop();
+                                  }
+                                },
+                                child: Padding(
+                                  padding: const EdgeInsets.all(12.0),
+                                  child: Text("Ok", style: widget.okTextStyle,),
+                                )),
+                          ],
+                        ),
+                      ),
+                    ],
+                  ),
+                )
             );
           });
         }).then((dayMonth) => widget.onChange(dayMonth));
