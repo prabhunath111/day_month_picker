@@ -158,10 +158,14 @@ class _DayMonthPickerState extends State<DayMonthPicker> {
                         mainAxisAlignment: MainAxisAlignment.end,
                         children: [
                           InkWell(
+                            splashColor: Colors.transparent,
                               onTap: ()=> Navigator.of(context).pop(),
-                              child: Text("Cancel", style: widget.cancelTextStyle)),
-                          const SizedBox(width: 18.0),
+                              child: Padding(
+                                padding: const EdgeInsets.all(12.0),
+                                child: Text("Cancel", style: widget.cancelTextStyle),
+                              )),
                           InkWell(
+                              splashColor: Colors.transparent,
                               onTap: () {
                                 DayMonth dayMonthData = DayMonth();
                                 if(dayIndex != null) {
@@ -174,7 +178,10 @@ class _DayMonthPickerState extends State<DayMonthPicker> {
                                   Navigator.of(context).pop();
                                 }
                               },
-                              child: Text("Ok", style: widget.okTextStyle,)),
+                              child: Padding(
+                                padding: const EdgeInsets.all(12.0),
+                                child: Text("Ok", style: widget.okTextStyle,),
+                              )),
                         ],
                       ),
                     ),
