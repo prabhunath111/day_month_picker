@@ -24,8 +24,7 @@ start using the package.
 
 ## Usage
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
+Short and useful examples for package users.
 
 ```dart
 DayMonthPicker(onChange: (DayMonth? dayMonth){
@@ -38,7 +37,4 @@ DayMonthPicker(onChange: (DayMonth? dayMonth){
 
 ## Additional information
 
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
-# day_month_picker
+If there is a case where you don't want to show the year option to USER. This package will save your time.
