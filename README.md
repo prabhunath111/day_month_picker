@@ -11,12 +11,11 @@ and the Flutter guide for
 [developing packages and plugins](https://flutter.dev/developing-packages).
 -->
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+TODO: This package will help you select the month and day of the month without showing the year option to the user.
 
 ## Features
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+TODO: This package will help you select the month and day of the month without showing the year option to the user.
 
 ## Getting started
 
@@ -29,7 +28,12 @@ TODO: Include short and useful examples for package users. Add longer examples
 to `/example` folder.
 
 ```dart
-const like = 'sample';
+DayMonthPicker(onChange: (DayMonth? dayMonth){
+        if(dayMonth != null) {
+          print("Day: ${dayMonth.day}");
+          print("Month: ${dayMonth.month}");
+        }
+      }),
 ```
 
 ## Additional information
