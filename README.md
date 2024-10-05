@@ -11,7 +11,7 @@ and the Flutter guide for
 [developing packages and plugins](https://flutter.dev/developing-packages).
 -->
 
-This package will help you select the month and day of the month without showing the year option to the user.
+Day Month Picker or You can say Date Month picker
 
 ## Features
 

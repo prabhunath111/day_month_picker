@@ -17,3 +17,7 @@ Hot fixes on earlier version
 ## 0.0.5
 
 Updated Screenshots in README.md file
+
+## 0.0.6
+
+Hot fixes
