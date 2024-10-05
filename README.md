@@ -19,8 +19,12 @@ This package will help you select the month and day of the month without showing
 
 ## Getting started
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+A basic understanding of Flutter app development.
+Installation: 
+Add the package dependency to your pubspec.yaml file
+
+dependencies:
+  day_month_picker: ^0.0.4
 
 ## Usage
 
