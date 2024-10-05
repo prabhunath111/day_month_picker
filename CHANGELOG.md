@@ -21,3 +21,15 @@ Updated Screenshots in README.md file
 ## 0.0.6
 
 Hot fixes
+
+## 0.0.7
+
+Hot fixes
+
+## 0.0.8
+
+Hot fixes
+
+## 0.0.9
+
+Hot fixes
