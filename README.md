@@ -11,11 +11,11 @@ and the Flutter guide for
 [developing packages and plugins](https://flutter.dev/developing-packages).
 -->
 
-TODO: This package will help you select the month and day of the month without showing the year option to the user.
+This package will help you select the month and day of the month without showing the year option to the user.
 
 ## Features
 
-TODO: This package will help you select the month and day of the month without showing the year option to the user.
+This package will help you select the month and day of the month without showing the year option to the user.
 
 ## Getting started
 
