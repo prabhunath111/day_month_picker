@@ -35,5 +35,6 @@ Hot fixes
 Hot fixes
 ## 0.0.10
 Hot fixes
-## 0.0.17
-Hot fixes
+
+## 1.0.0
+Ready to use version

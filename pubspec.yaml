@@ -1,6 +1,6 @@
 name: day_month_picker
 description: "Select your desired month and day easily with this package! Pick from the picker a simple date choice process—no year needed. Enjoy!"
-version: 0.0.17
+version: 1.0.0
 homepage: https://github.com/prabhunath111/day_month_picker
 
 environment:
