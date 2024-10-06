@@ -102,6 +102,6 @@ Widget build(BuildContext context) {
 
 ![Day Month Picker Example](https://github.com/user-attachments/assets/4371824a-fc35-4114-9e8c-69cad1b85eda)
 
-[//]: # (![Day Month Picker Example]&#40;https://github.com/user-attachments/assets/d4bf06b1-b1fb-4c23-8162-945d32acc042&#41;)
+![Day Month Picker Example](https://github.com/user-attachments/assets/d4bf06b1-b1fb-4c23-8162-945d32acc042)
 
 ## Done
