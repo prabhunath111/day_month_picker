@@ -45,9 +45,10 @@ DayMonthPicker(onChange: (DayMonth? dayMonth){
 
 If there is a case where you don't want to show the year option to USER. This package will save your time.
 
-Some UI examples
+## Some UI examples
 
-![shared image (5)](https://github.com/user-attachments/assets/4371824a-fc35-4114-9e8c-69cad1b85eda)
-![shared image (6)](https://github.com/user-attachments/assets/d4bf06b1-b1fb-4c23-8162-945d32acc042)
+![Day Month Picker Example](https://github.com/user-attachments/assets/4371824a-fc35-4114-9e8c-69cad1b85eda)
 
+[//]: # (![Day Month Picker Example]&#40;https://github.com/user-attachments/assets/d4bf06b1-b1fb-4c23-8162-945d32acc042&#41;)
 
+## Done
