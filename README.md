@@ -80,7 +80,7 @@ DayMonthPicker(onChange: (DayMonth? dayMonth){
         }
       }),
 ```
-##Exapmle
+## Example
 ```dart
 @override
 Widget build(BuildContext context) {
@@ -107,4 +107,3 @@ Widget build(BuildContext context) {
 <img width="1439" alt="image (7)" src="https://github.com/user-attachments/assets/15ef4717-1a27-4a0c-986f-20cedc70abb3">
 
 
-## Done
