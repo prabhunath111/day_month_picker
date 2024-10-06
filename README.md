@@ -48,24 +48,25 @@ const DayMonthPicker({
 });
 ```
 ## Parameters
-key: An optional key to identify the widget.
-surfaceTintColor: A color to tint the dialog surface (default is transparent).
-titleTextStyle: Text style for the dialog title.
-selectedMonthBgColor: Background color for the selected month (default is blue).
-unSelectedMonthBgColor: Background color for unselected months (default is white).
-selectedDayBgColor: Background color for the selected day (default is blue).
-unSelectedDayBgColor: Background color for unselected days (default is white).
-title: The title of the dialog (default is "Date Month Picker").
-selectedMonthTextStyle: Text style for the selected month label.
-unSelectedMonthTextStyle: Text style for unselected month labels.
-selectedDayTextStyle: Text style for the selected day label.
-unSelectedDayTextStyle: Text style for unselected day labels.
-child: The widget displayed as the button to open the picker (default is a padded "Month Picker" text).
-cancelTextStyle: Text style for the cancel button.
-okTextStyle: Text style for the ok button.
-existingDay: An optional string representing the already selected day.
-existingMonth: An optional string representing the already selected month.
-onChange: A required callback function that is triggered when the user selects a day and month.
+
+- **key**: An optional key to identify the widget.
+- **surfaceTintColor**: A color to tint the dialog surface (default is transparent).
+- **titleTextStyle**: Text style for the dialog title.
+- **selectedMonthBgColor**: Background color for the selected month (default is blue).
+- **unSelectedMonthBgColor**: Background color for unselected months (default is white).
+- **selectedDayBgColor**: Background color for the selected day (default is blue).
+- **unSelectedDayBgColor**: Background color for unselected days (default is white).
+- **title**: The title of the dialog (default is "Date Month Picker").
+- **selectedMonthTextStyle**: Text style for the selected month label.
+- **unSelectedMonthTextStyle**: Text style for unselected month labels.
+- **selectedDayTextStyle**: Text style for the selected day label.
+- **unSelectedDayTextStyle**: Text style for unselected day labels.
+- **child**: The widget displayed as the button to open the picker (default is a padded "Month Picker" text).
+- **cancelTextStyle**: Text style for the cancel button.
+- **okTextStyle**: Text style for the ok button.
+- **existingDay**: An optional string representing the already selected day.
+- **existingMonth**: An optional string representing the already selected month.
+- **onChange**: A required callback function that is triggered when the user selects a day and month.
 
 ## Usage
 
