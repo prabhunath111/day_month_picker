@@ -88,10 +88,10 @@ class _DayMonthPickerState extends State<DayMonthPicker> {
         int monthIndex = 0;
         int? dayIndex;
         if (widget.existingDay != null) {
-          dayIndex = int.parse(widget.existingDay!);
+          dayIndex = int.parse(widget.existingDay!) - 1;
         }
         if (widget.existingMonth != null) {
-          monthIndex = int.parse(widget.existingMonth!);
+          monthIndex = int.parse(widget.existingMonth!) - 1;
         }
 
         showDialog(

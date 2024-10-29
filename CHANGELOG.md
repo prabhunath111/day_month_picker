@@ -38,3 +38,6 @@ Hot fixes
 
 ## 1.0.0
 Ready to use version
+
+## 1.0.1
+Hot fixes
