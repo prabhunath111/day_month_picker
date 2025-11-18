@@ -167,29 +167,37 @@ class _DayMonthPickerState extends State<DayMonthPicker> {
                                     .elementAt(monthIndex)
                                     .value
                                     .length,
-                                (index) => InkWell(
-                                      splashColor: Colors.transparent,
-                                      onTap: () =>
-                                          dialogState(() => dayIndex = index),
-                                      child: Container(
-                                          padding: const EdgeInsets.symmetric(
-                                              vertical: 4.0, horizontal: 8),
-                                          decoration: BoxDecoration(
-                                            color: dayIndex == index
-                                                ? widget.selectedDayBgColor
-                                                : widget.unSelectedDayBgColor,
-                                            shape: BoxShape.circle,
-                                          ),
-                                          child: Text(
-                                              monthDays.entries
-                                                  .elementAt(monthIndex)
-                                                  .value[index]
-                                                  .toString(),
-                                              style: dayIndex == index
-                                                  ? widget.selectedDayTextStyle
-                                                  : widget
-                                                      .unSelectedDayTextStyle)),
-                                    )),
+                                    (index) => InkWell(
+                                  splashColor: Colors.transparent,
+                                  onTap: () =>
+                                      dialogState(() => dayIndex = index),
+                                  child: Container(
+                                      height: 28,
+                                      width: 36,
+                                      padding: const EdgeInsets.symmetric(
+                                          vertical: 4.0, horizontal: 8),
+                                      decoration: BoxDecoration(
+                                        color: dayIndex == index
+                                            ? widget.selectedDayBgColor
+                                            : widget.unSelectedDayBgColor,
+                                        shape: BoxShape.circle,
+                                      ),
+                                      child: Center(
+                                        child: Text(
+                                            monthDays.entries
+                                                .elementAt(monthIndex)
+                                                .value[index]
+                                                .toString(),
+                                            style: dayIndex == index
+                                                ? widget.selectedDayTextStyle?.copyWith(
+                                                fontSize: 14.0
+                                            )
+                                                : widget
+                                                .unSelectedDayTextStyle?.copyWith(
+                                                fontSize: 14
+                                            )),
+                                      )),
+                                )),
                           ),
                           const SizedBox(height: 12.0),
                           Align(
