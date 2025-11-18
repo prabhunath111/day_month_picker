@@ -40,7 +40,10 @@ Hot fixes
 Ready to use version
 
 ## 1.0.1
-Hot fixes#
+Hot fixes
 
 ## 1.0.2
 flutter upgraded to 3.32.0
+
+## 1.0.3
+hot UI Fixes
